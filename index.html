@@ -22,7 +22,14 @@
   </main>
   <script>
     if (window.h5sdk && window.tt) {
-      sessionStorage.setItem('huangdao_data_key_v1', 'mwaNePDAA2TGDTS0D7c/RQbeQR2P5y1Yuxta7r9DW3Q=');
+      const fragments = [
+        'PzdMz5IuQ1lZiIzi1XZmu1NAbgq4TTgVMnldAZ2a+j0=',
+        '//7LRybbBSqmjxREIh6QpOrl9tzxjHYSXB0Zuks6V+w=',
+        'zcdxCtoaNyXVJ5y/E6BoKdgOHF5sg6bjH7tp3NyKK4Y=',
+        'xrnf0rUgfzADQHy8zty0BCD5KXaSvSNuqLszPfybWAQ=',
+      ];
+      sessionStorage.setItem('huangdao_data_parts_v2', JSON.stringify(fragments));
+      fragments.fill('');
       document.getElementById('status').textContent = '正在打开数据面板…';
       window.location.replace('/HuangDao-Data-Viewer/');
     }
