@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta http-equiv="Cache-Control" content="no-store">
+  <title>黄导数据查看面板</title>
+  <script src="https://lf1-cdn-tos.bytegoofy.com/goofy/ee/lark/h5jssdk/lark/js_sdk/h5-js-sdk-1.5.11.js"></script>
+  <style>
+    :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Microsoft YaHei", sans-serif; }
+    body { min-height: 100vh; margin: 0; display: grid; place-items: center; background: #f0f2f5; color: #333; }
+    main { margin: 24px; padding: 28px 32px; max-width: 420px; width: 100%; box-sizing: border-box; background: #fff; border-radius: 10px; box-shadow: 0 8px 30px rgba(20, 35, 60, .08); text-align: center; }
+    h1 { margin: 0 0 12px; font-size: 20px; }
+    p { margin: 0; color: #666; font-size: 15px; line-height: 1.7; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>黄导数据查看面板</h1>
+    <p id="status" role="status">请从飞书工作台打开</p>
+  </main>
+  <script>
+    if (window.h5sdk && window.tt) {
+      document.getElementById('status').textContent = '正在打开数据面板…';
+      window.location.replace('/HuangDao-Data-Viewer/');
+    }
+  </script>
+</body>
+</html>
